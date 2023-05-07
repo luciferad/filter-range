@@ -1,10 +1,6 @@
 function filterRange(arr, a, b) {
     filtered = []
-    arr.forEach(
-        (num) => {if (num >= a && num <= b) {
-            filtered.push(num);
-        };
-    });
+    arr.forEach((num) => num >= a && num <= b ? filtered.push(num): null);
     return filtered;
 }
 
